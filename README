@@ -1,0 +1,14 @@
+Console application in C# using neural network with to predict the ideal font colour (black or white) to display over 
+any given background colour (red, green, blue).
+
+This learning algorithm was created with no references to any Machine Learning libraries.The neural network framework
+was adapted from The One on youtube - https://youtu.be/L_PByyJ9g-I
+A TanH activation function was used with a adjustable learning rate and number of feed forward / back propagation iterations.
+
+The number of hidden layers along with neurons in each layer can be set when constructing the NeuralNetwork class. 
+The ideal font colour was chosen for 100 different background colours, with effort to reduce biases across the colour 
+spectrum. 
+
+This list of 100 lines was shuffled using the rand() function in excel, and split into 75 lines for training data and 
+25 for test data. Red, green and blue values (0-255) were normalized (0-1).
+Some large errors exist due to the at times subjective nature of background / font aesthetics.
