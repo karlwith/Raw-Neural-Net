@@ -1,0 +1,12 @@
+C:\Users\Karl\Dropbox\ML\FontColourPredictor\FontColourPredictor\bin\Debug\netcoreapp3.1\FontColourPredictor.exe
+C:\Users\Karl\Dropbox\ML\FontColourPredictor\FontColourPredictor\bin\Debug\netcoreapp3.1\FontColourPredictor.deps.json
+C:\Users\Karl\Dropbox\ML\FontColourPredictor\FontColourPredictor\bin\Debug\netcoreapp3.1\FontColourPredictor.runtimeconfig.json
+C:\Users\Karl\Dropbox\ML\FontColourPredictor\FontColourPredictor\bin\Debug\netcoreapp3.1\FontColourPredictor.runtimeconfig.dev.json
+C:\Users\Karl\Dropbox\ML\FontColourPredictor\FontColourPredictor\bin\Debug\netcoreapp3.1\FontColourPredictor.dll
+C:\Users\Karl\Dropbox\ML\FontColourPredictor\FontColourPredictor\bin\Debug\netcoreapp3.1\FontColourPredictor.pdb
+C:\Users\Karl\Dropbox\ML\FontColourPredictor\FontColourPredictor\obj\Debug\netcoreapp3.1\FontColourPredictor.AssemblyInfoInputs.cache
+C:\Users\Karl\Dropbox\ML\FontColourPredictor\FontColourPredictor\obj\Debug\netcoreapp3.1\FontColourPredictor.AssemblyInfo.cs
+C:\Users\Karl\Dropbox\ML\FontColourPredictor\FontColourPredictor\obj\Debug\netcoreapp3.1\FontColourPredictor.csproj.CoreCompileInputs.cache
+C:\Users\Karl\Dropbox\ML\FontColourPredictor\FontColourPredictor\obj\Debug\netcoreapp3.1\FontColourPredictor.dll
+C:\Users\Karl\Dropbox\ML\FontColourPredictor\FontColourPredictor\obj\Debug\netcoreapp3.1\FontColourPredictor.pdb
+C:\Users\Karl\Dropbox\ML\FontColourPredictor\FontColourPredictor\obj\Debug\netcoreapp3.1\FontColourPredictor.genruntimeconfig.cache
