@@ -1,6 +1,7 @@
 # Neural network
 This learning algorithm was created with no references to any existing Machine Learning libraries. The neural network framework
-was adapted from The One on youtube - https://youtu.be/L_PByyJ9g-I
+was adapted from The One on youtube - https://youtu.be/L_PByyJ9g-I.
+
 A TanH activation function was used with a adjustable learning rate and number of feed forward / back propagation iterations.
 
 The number of hidden layers along with neurons in each layer can be set when constructing the NeuralNetwork class. 
