@@ -8,7 +8,7 @@ The number of hidden layers along with neurons in each layer can be set when con
 The ideal font colour was chosen for 100 different background colours, with effort to reduce biases across the colour 
 spectrum. 
 
-## Colour prediction
+## Application - Font colour prediction
 Console application in C# using neural network with to predict the ideal font colour (black or white) to display over 
 any given background colour (RGB representation).
 
