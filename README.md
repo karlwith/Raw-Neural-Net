@@ -1,4 +1,4 @@
-# Neural network
+# Neural Network from scratch, applied to novel dataset
 This learning algorithm was created with no references to any existing Machine Learning libraries. The neural network framework
 was adapted from The One on youtube - https://youtu.be/L_PByyJ9g-I.
 
