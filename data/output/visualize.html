@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Font Color Predictor - Test Results</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #121212; 
+            color: #e0e0e0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 32px;
+            font-weight: 500;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: #aaa;
+            font-weight: normal;
+            margin-top: 5px;
+        }
+        .color-box { 
+            width: 150px; height: 70px; 
+            display: flex; flex-direction: column; 
+            justify-content: center; align-items: center;
+            margin-right: 15px;
+            border: 1px solid #444;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .black-text { color: black; font-weight: bold; padding: 2px; }
+        .white-text { color: white; font-weight: bold; padding: 2px; }
+        .predicted { 
+            border: 2px solid #00c853; 
+            box-shadow: 0 0 5px rgba(0, 200, 83, 0.6);
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .prediction { 
+            font-weight: bold;
+            color: #e0e0e0;
+        }
+        .table-wrapper {
+            padding: 0 20px;
+        }
+        table { 
+            border-collapse: collapse; 
+            width: 100%; 
+            margin: 20px 0;
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        th, td { 
+            padding: 15px 20px; 
+            text-align: left; 
+            border-bottom: 1px solid #333; 
+        }
+        th { 
+            background-color: #2c2c2c; 
+            color: #e0e0e0;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+        tr:hover {
+            background-color: #252525;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Font Color Predictor</h1>
+            <p class="subtitle">Neural network predictions for optimal text color on various backgrounds</p>
+        </header>
+        
+        <div class="table-wrapper">
+            <table>
+                <tr>
+                    <th>Color Sample</th>
+                    <th>RGB Values</th>
+                    <th>Prediction</th>
+                    <th>Confidence</th>
+                </tr>
+                <!-- From actual test data -->
+                <tr>
+                    <td>
+                        <div class="color-box" style="background-color: rgb(153, 205, 255);">
+                            <span class="black-text predicted">Sample Text</span>
+                            <span class="white-text">Sample Text</span>
+                        </div>
+                    </td>
+                    <td>R: 153, G: 205, B: 255</td>
+                    <td class="prediction">BLACK</td>
+                    <td>99.2%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="color-box" style="background-color: rgb(205, 103, 1);">
+                            <span class="black-text">Sample Text</span>
+                            <span class="white-text predicted">Sample Text</span>
+                        </div>
+                    </td>
+                    <td>R: 205, G: 103, B: 1</td>
+                    <td class="prediction">WHITE</td>
+                    <td>99.8%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="color-box" style="background-color: rgb(245, 255, 255);">
+                            <span class="black-text predicted">Sample Text</span>
+                            <span class="white-text">Sample Text</span>
+                        </div>
+                    </td>
+                    <td>R: 245, G: 255, B: 255</td>
+                    <td class="prediction">BLACK</td>
+                    <td>99.8%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="color-box" style="background-color: rgb(226, 229, 226);">
+                            <span class="black-text predicted">Sample Text</span>
+                            <span class="white-text">Sample Text</span>
+                        </div>
+                    </td>
+                    <td>R: 226, G: 229, B: 226</td>
+                    <td class="prediction">BLACK</td>
+                    <td>99.8%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="color-box" style="background-color: rgb(103, 1, 205);">
+                            <span class="black-text">Sample Text</span>
+                            <span class="white-text predicted">Sample Text</span>
+                        </div>
+                    </td>
+                    <td>R: 103, G: 1, B: 205</td>
+                    <td class="prediction">WHITE</td>
+                    <td>99.9%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="color-box" style="background-color: rgb(153, 153, 255);">
+                            <span class="black-text predicted">Sample Text</span>
+                            <span class="white-text">Sample Text</span>
+                        </div>
+                    </td>
+                    <td>R: 153, G: 153, B: 255</td>
+                    <td class="prediction">BLACK</td>
+                    <td>98.8%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="color-box" style="background-color: rgb(205, 153, 255);">
+                            <span class="black-text predicted">Sample Text</span>
+                            <span class="white-text">Sample Text</span>
+                        </div>
+                    </td>
+                    <td>R: 205, G: 153, B: 255</td>
+                    <td class="prediction">BLACK</td>
+                    <td>99.4%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="color-box" style="background-color: rgb(225, 225, 225);">
+                            <span class="black-text predicted">Sample Text</span>
+                            <span class="white-text">Sample Text</span>
+                        </div>
+                    </td>
+                    <td>R: 225, G: 225, B: 225</td>
+                    <td class="prediction">BLACK</td>
+                    <td>99.8%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="color-box" style="background-color: rgb(1, 205, 103);">
+                            <span class="black-text">Sample Text</span>
+                            <span class="white-text predicted">Sample Text</span>
+                        </div>
+                    </td>
+                    <td>R: 1, G: 205, B: 103</td>
+                    <td class="prediction">WHITE</td>
+                    <td>99.9%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="color-box" style="background-color: rgb(103, 205, 1);">
+                            <span class="black-text">Sample Text</span>
+                            <span class="white-text predicted">Sample Text</span>
+                        </div>
+                    </td>
+                    <td>R: 103, G: 205, B: 1</td>
+                    <td class="prediction">WHITE</td>
+                    <td>54.1%</td>
+                </tr>
+            </table>
+        </div>
+        
+        <footer>
+            Font Color Predictor • Neural Network Project
+        </footer>
+    </div>
+</body>
+</html> 
