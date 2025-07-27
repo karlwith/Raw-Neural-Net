@@ -1,9 +1,10 @@
 # Font Colour Predictor
 This program implementa a basic multi-layer perceptron neural network from scratch, and then applies it to a novel dataset, to predict the ideal font color to display (b, w) over a given background (r, g, b).
 
+The largest limitation of this project is the subjective bias transferred from the training data, of what font colour looks good on a given background colour. This is just a POC, and the training data could be profiled to a given use case.
+
 
 ## Build and Run
-
 ### Prerequisites
 - .NET 9.0+
 ### Linux
@@ -17,9 +18,6 @@ run.bat # build and run the program
 ```
 
 ## Outputs
-
-### Architecture
-
 ### Command Line Interface
 This is the cli interface as the program is run, showing basic model training and inference.
 ![CLI Interface](data/images/cli_interface.gif)
@@ -29,18 +27,17 @@ This is part of the randomized 25% test split from the initial training data, vi
 
 
 ## The Dataset - ideal B/W font colour for a given RGB background
-A console application providing inference to the trained neural network is served to predict the ideal font colour (b, w) to display over any given background colour (r, g, b).
-
-100 training samples were generated manually to train the network with. The background was defined by red, green, blue values of the range 0-255 and ideal font colour 0 for black, 1 for white.
+100 training samples were generated manually to train the network with. The background was defined by (r, g, b) in the range 0-255 and ideal font colour (b, w) in the range 0-1.
 
 This list of 100 entries was shuffled in excel then split into 75 lines for training data and 
-25 for test data. Red, green and blue values (0-255) were normalized (0-1).
+25 for test data.
+
+(r, g, b) values were normalized from 0-255 to 0-1.
 
 Some large errors exist due to the at times subjective nature of background / font aesthetics.
 
 
 ## Neural Network
-
 This learning algorithm was created with no references to any existing Machine Learning libraries. The neural network framework
 was adapted from The One on youtube - https://youtu.be/L_PByyJ9g-I.
 
@@ -52,6 +49,7 @@ spectrum.
 
 The program wraps around the neural network like this
 ![CLI Interface](data/images/neural_network.png)
+
 
 ## TODO
 Adapt from Black and White font color predictor to RGB (add 1 output neuron, create new train dataset)
